@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>User</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.0.5/css/dataTables.bootstrap5.css"
+    />
+    <link rel="stylesheet" href="assets/css/event-calendar.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/nice-select.css" /> -->
+    <link rel="stylesheet" href="assets/css/event-calendar.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css" /> -->
+  </head>
+  <body class="">
+    <!-- header-area START -->
+    <div class="header__area bg-white">
+      <div class="container">
+        <div
+          class="header__wrapper d-flex align-items-center justify-content-between"
+        >
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/Logo.png" alt="logo" />
+            <span
+              >演色印刷事業 <br />
+              後台管理系統</span
+            >
+          </a>
+          <div class="header__right d-flex align-items-center">
+            <a
+              class="header__btn d-flex align-items-center"
+              data-bs-toggle="modal"
+              data-bs-target="#logout__modal"
+              ><img
+                src="assets/img/arrow-right-color.svg"
+                alt="arrow"
+              />Logout</a
+            >
+            <span
+              class="sidebar__open d-lg-none d-flex align-items-center justify-content-center"
+              ><i class="fal fa-bars"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body_overlay"></div>
+
+    <!-- header-area END -->
+
+    <main>
+      <!--------- Section START ---------->
+      <section class="Dashboard-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="main-menu">
+                <span
+                  class="closeX d-flex d-lg-none align-items-center justify-content-center rounded-circle"
+                  ><i class="fal fa-times"></i
+                ></span>
+                <ul>
+                  <li>
+                    <a
+                      class="active"
+                      data-bs-toggle="collapse"
+                      href="#menu_collapse_1"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="menu_collapse_1"
+                    >
+                      <img src="assets/img/camera-icon.svg" alt="camera icon" />
+                      <span>Photo Shooting</span>
+                    </a>
+                    <div class="collapse" id="menu_collapse_1">
+                      <div class="menu-inner d-flex flex-column">
+                        <a href="#" class="p-0">Appointment</a>
+                        <a href="#" class="p-0">Agenda</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#menu_collapse_2"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="menu_collapse_2"
+                    >
+                      <img
+                        src="assets/img/education-icon.svg"
+                        alt="education-icon"
+                        class="menu__icon1"
+                      />
+                      <img
+                        src="assets/img/education-cap-white.svg"
+                        alt="education-cap-white"
+                        class="menu__icon2"
+                      />
+                      <span>Bachelor's Uniforms</span>
+                    </a>
+                    <div class="collapse" id="menu_collapse_2">
+                      <div class="menu-inner d-flex flex-column">
+                        <a href="#" class="p-0">Appointment</a>
+                        <a href="#" class="p-0">Agenda</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#menu_collapse_3"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="menu_collapse_3"
+                    >
+                      <img
+                        src="assets/img/money-icon.svg"
+                        alt="money-icon"
+                        class="menu__icon1"
+                      />
+                      <img
+                        src="assets/img/money-white.svg"
+                        alt="money-icon"
+                        class="menu__icon2"
+                      />
+                      <span>Order</span>
+                    </a>
+                    <div class="collapse" id="menu_collapse_3">
+                      <div class="menu-inner d-flex flex-column">
+                        <a href="#" class="p-0">Appointment</a>
+                        <a href="#" class="p-0">Agenda</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#menu_collapse_4"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="menu_collapse_4"
+                    >
+                      <img src="assets/img/database.svg" alt="database icon" />
+                      <span>Data</span>
+                    </a>
+                    <div class="collapse" id="menu_collapse_4">
+                      <div class="menu-inner d-flex flex-column">
+                        <a href="#" class="p-0">Customer</a>
+                        <a href="#" class="p-0">Employee</a>
+                        <a href="#" class="p-0">Uniform</a>
+                        <a href="#" class="p-0">Printing</a>
+                        <a href="#" class="p-0">Gift</a>
+                        <a href="#" class="p-0">Vendor</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#menu_collapse_5"
+                      role="button"
+                      aria-expanded="true"
+                      aria-controls="menu_collapse_5"
+                    >
+                      <img
+                        src="assets/img/setting-icon.svg"
+                        alt="setting-icon"
+                        class="menu__icon1"
+                      />
+                      <img
+                        src="assets/img/setting-white.svg"
+                        alt="setting-icon"
+                        class="menu__icon2"
+                      />
+                      <span>System</span>
+                    </a>
+                    <div class="collapse show" id="menu_collapse_5">
+                      <div class="menu-inner d-flex flex-column">
+                        <a href="#" class="p-0">System user</a>
+                        <a href="#" class="p-0">Change password</a>
+                        <a href="#" class="p-0">Access</a>
+                        <a href="#" class="p-0">Group</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="Scheduling-wrp bg-white">
+                <div
+                  class="Scheduling-top d-flex align-items-center justify-content-between"
+                >
+                  <h4 class="mb-0">System User</h4>
+                  <div
+                    class="src_box_wrap d-flex flex-column-reverse flex-md-row align-items-center"
+                  >
+                    <a
+                      href="#"
+                      class="src_box_btn d-flex align-items-center justify-content-center text-white fw-bold"
+                      data-bs-toggle="modal"
+                      data-bs-target="#add_user_modal"
+                      >Add</a
+                    >
+                    <div
+                      class="src_box d-flex align-items-center justify-content-between overflow-hidden"
+                    >
+                      <input type="text" title="search box" />
+                      <a href="#"
+                        ><img src="assets/img/search-icon.svg" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="Scheduling-table">
+                  <div class="table">
+                    <!-- Set fixed Hight -->
+                    <table
+                      id="table-1"
+                      class="table table-striped"
+                      style="width: 100%"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Employee ID</th>
+                          <th>Department</th>
+                          <th>Mobile</th>
+                          <th>Email</th>
+                          <th>Edit</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>John Smith</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td>626-374-8888</td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>John Smith</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>John Smith</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>李大強</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>李大強</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>李大強</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>李大強</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>李大強</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>李大強</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>李大強</td>
+                          <td>20231111</td>
+                          <td>小專</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="edit-delete">
+                              <a
+                                class="form_edit_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#edit_user_modal"
+                                ><img src="assets/img/pencil.svg" alt="edit"
+                              /></a>
+                              <a href="#"
+                                ><img src="assets/img/delete.svg" alt="delete"
+                              /></a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="table-header-fixed"></table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page__bottom user-bottom">
+              <span>系統設計：易及資訊有限公司</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------- Section End ---------->
+
+      <!-- log out modal start  -->
+      <div
+        class="modal fade logout__modal"
+        id="logout__modal"
+        tabindex="-1"
+        aria-labelledby="logout__modal__label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body border-0 p-0">
+              <h4 class="modal__title fw-bold text-center">Logout?</h4>
+            </div>
+            <div
+              class="modal-footer modal__btn border-0 d-flex align-items-center p-0"
+            >
+              <button
+                type="button"
+                class="thm__btn no__btn m-0"
+                data-bs-dismiss="modal"
+              >
+                No
+              </button>
+              <button type="button" class="thm__btn yes__btn m-0">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- log out modal end  -->
+
+      <!-- add user modal start -->
+      <div
+        class="modal fade add_user_modal"
+        id="add_user_modal"
+        tabindex="-1"
+        aria-labelledby="add_user_modal_label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content w-100">
+            <div class="modal-body border-0 p-0">
+              <h4 class="modal__title fw-bold text-center">Add user</h4>
+              <form class="user__form">
+                <div class="input__blk position-relative">
+                  <label for="name" class="fw-bold">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Write something here..."
+                    class="w-100"
+                  />
+                  <div
+                    class="input__icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/user-icon.svg" alt="form icon" />
+                  </div>
+                </div>
+                <div class="input__blk position-relative">
+                  <label for="department" class="fw-bold">Department</label>
+                  <input
+                    type="text"
+                    id="department"
+                    placeholder="Write something here..."
+                    class="w-100"
+                  />
+                  <div
+                    class="input__icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/user-icon.svg" alt="form icon" />
+                  </div>
+                </div>
+                <div class="input__blk position-relative">
+                  <label for="email" class="fw-bold">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    class="w-100"
+                  />
+                  <div
+                    class="input__icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/envelope.svg" alt="form icon" />
+                  </div>
+                </div>
+                <div class="input__blk position-relative">
+                  <label for="password" class="fw-bold">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="minimum 8 characters"
+                    class="w-100"
+                  />
+                  <div
+                    class="input__icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/security-icon.svg" alt="form icon" />
+                  </div>
+                  <div
+                    class="input__icon password-hide-icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/eye-icon.svg" alt="eye-icon" />
+                  </div>
+                </div>
+                <div class="input__blk position-relative">
+                  <label for="group" class="fw-bold">Group</label>
+                  <select name="group" id="group" class="w-100">
+                    <option value="1">Group 1</option>
+                    <option value="1">Group 2</option>
+                    <option value="1">Group 3</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div
+              class="modal-footer modal__btn border-0 d-grid align-items-center p-0"
+            >
+              <button
+                type="button"
+                class="thm__btn no__btn m-0"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="thm__btn yes__btn m-0">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- add user modal end -->
+
+      <!-- edit user modal start -->
+      <div
+        class="modal fade add_user_modal edit_user_modal"
+        id="edit_user_modal"
+        tabindex="-1"
+        aria-labelledby="edit_user_modal_label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content w-100">
+            <div class="modal-body border-0 p-0">
+              <h4 class="modal__title fw-bold text-center">Edit user</h4>
+              <form class="user__form">
+                <div class="input__blk position-relative">
+                  <label for="name" class="fw-bold">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Write something here..."
+                    class="w-100"
+                  />
+                  <div
+                    class="input__icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/user-icon.svg" alt="form icon" />
+                  </div>
+                </div>
+                <div class="input__blk position-relative">
+                  <label for="department" class="fw-bold">Department</label>
+                  <input
+                    type="text"
+                    id="department"
+                    placeholder="Write something here..."
+                    class="w-100"
+                  />
+                  <div
+                    class="input__icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/user-icon.svg" alt="form icon" />
+                  </div>
+                </div>
+                <div class="input__blk position-relative">
+                  <label for="email" class="fw-bold">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    class="w-100"
+                  />
+                  <div
+                    class="input__icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/envelope.svg" alt="form icon" />
+                  </div>
+                </div>
+                <div class="input__blk position-relative">
+                  <label for="password" class="fw-bold">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="minimum 8 characters"
+                    class="w-100"
+                  />
+                  <div
+                    class="input__icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/security-icon.svg" alt="form icon" />
+                  </div>
+                  <div
+                    class="input__icon password-hide-icon position-absolute d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/img/eye-icon.svg" alt="eye-icon" />
+                  </div>
+                </div>
+                <div class="input__blk position-relative">
+                  <label for="group" class="fw-bold">Group</label>
+                  <select name="group" id="group" class="w-100">
+                    <option value="1">Group 1</option>
+                    <option value="1">Group 2</option>
+                    <option value="1">Group 3</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div
+              class="modal-footer modal__btn border-0 d-grid align-items-center p-0"
+            >
+              <button
+                type="button"
+                class="thm__btn no__btn m-0"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="thm__btn yes__btn m-0">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- edit user modal end -->
+    </main>
+
+    <!-- JS here -->
+    <!-- <script src="assets/js/jquery-3.4.1.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="assets/js/popper.min.js"></script> -->
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="assets/js/jquery.nice-select.min.js"></script> -->
+    <script src="assets/js/event-calendar.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.5/js/dataTables.bootstrap5.js"></script>
+
+    <script>
+      new DataTable("#table-1");
+    </script>
+  </body>
+</html>

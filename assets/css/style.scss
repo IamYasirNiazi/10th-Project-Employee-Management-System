@@ -1,0 +1,2469 @@
+/*   Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+/* ======font family=========
+font-family: 'Quicksand', sans-serif;
+*/
+
+:root{
+
+  --borderColor: #D0D4CA;
+  --bgColor: #EDEDED;
+  --thmColor: #005BC1;
+  --thmColor2: #F7B28B;
+  --textColor: #120019;
+  --white: #fff;
+
+  --f18 : 18px;
+  --f20 : 20px;
+  --f22 : 22px;
+  --f24 : 24px;
+  --f28 : 28px;
+  --f30 : 30px;
+  --f32 : 32px;
+  --f36 : 36px;
+  --f40 : 40px;
+  --f48 : 48px;
+
+}
+
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: var(--textColor);
+  font-family: 'Quicksand', sans-serif;
+  background: #EDEDED;
+}
+
+table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n+1) > * {
+    box-shadow: inset 0 0 0 9999px rgba(var(--dt-row-stripe), 0.05);
+}
+table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n+1) > * {
+    box-shadow: none;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0rem 0rem;
+}
+
+table.dataTable thead > tr > th.dt-orderable-asc:hover, table.dataTable thead > tr > th.dt-orderable-desc:hover, table.dataTable thead > tr > td.dt-orderable-asc:hover, table.dataTable thead > tr > td.dt-orderable-desc:hover {
+    outline: 0px solid rgba(0, 0, 0, 0.05) !important;
+    outline-offset: -2px;
+}
+
+table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order, table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order, table.dataTable thead > tr > th.dt-ordering-asc span.dt-column-order, table.dataTable thead > tr > th.dt-ordering-desc span.dt-column-order, table.dataTable thead > tr > td.dt-orderable-asc span.dt-column-order, table.dataTable thead > tr > td.dt-orderable-desc span.dt-column-order, table.dataTable thead > tr > td.dt-ordering-asc span.dt-column-order, table.dataTable thead > tr > td.dt-ordering-desc span.dt-column-order {
+    width: 1px;
+}
+
+.dt-search, .dt-length{
+display: none !important;
+}
+
+.dt-info, .dt-paging{
+    display: none !important;
+}
+
+.table thead th {
+    padding: 20px 25px !important;
+}
+
+.table .row {
+    margin-top: 0rem !important;
+    // padding-top: -5rem !important;
+    @media (max-width:767px) {
+        margin-top: -.8rem !important;
+    }
+}
+
+
+
+// Responsive for all screens
+@media screen and (min-width:1500px) and (max-width:1599px) {
+    body{
+        zoom: 1.05;
+        // background: #022b3a;
+    }
+}
+
+@media screen and (min-width:1600px) and (max-width:1705px) {
+    body{
+        zoom: 1.05;
+        // background: #022b3a;
+    }
+}
+@media screen and (min-width:1706px) and (max-width:1919px) {
+    body{
+        zoom: 1.2;
+        // background: #022b3a;
+    }
+}
+@media screen and (min-width:1920px) and (max-width:2500px) {
+    body{
+        zoom: 1.4;
+    }
+}
+@media screen and (min-width:2501px) and (max-width: 2700px){
+    body{
+        zoom: 1.8;
+    }
+}
+@media screen and (min-width:2701px) and (max-width: 4500px){
+    body{
+        zoom: 2;
+    }
+}
+@media screen and (min-width:4501px) and (max-width:5200px){
+    body{
+        zoom: 3.2;
+    }
+}
+@media screen and (min-width:5201px) and (max-width:6600px){
+    body{
+        zoom: 3.7;
+    }
+}
+
+
+
+img{
+  max-width: 100%;
+}
+  
+button {
+  cursor: pointer; 
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+a:focus,
+button:focus {
+  text-decoration: none;
+  outline: none; }
+
+a:focus,
+a:hover {
+  text-decoration: none; }
+
+a,
+button {
+  color: inherit;
+  outline: medium none; 
+  text-decoration: none;
+}
+
+button:focus, input:focus, input:focus, textarea, textarea:focus {
+  outline: 0; }
+
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px; 
+  font-weight: 700;
+ }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit; }
+
+h1 {
+  font-size: 40px; }
+
+h2 {
+  font-size: 35px; }
+
+h3 {
+  font-size: var(--f28);
+  }
+
+h4 {
+  font-size: var(--f24);
+  }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+li {
+  list-style: none; }
+
+.pb_150{padding-bottom: 150px;}
+.pb_100{padding-bottom: 100px;}
+.pb_50{padding-bottom: 50px;}
+.pt_150{padding-top: 150px;}
+.pt_100{padding-top: 100px;}
+.pt_50{padding-top: 50px;}
+
+.mb_150{margin-bottom: 150px;}
+.mb_100{margin-bottom: 100px;}
+.mb_50{margin-bottom: 50px;}
+.mt_150{margin-top: 150px;}
+.mt_100{margin-top: 100px;}
+.mt_50{margin-top: 50px;}
+ 
+.thm__btn{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    border-radius: 20px;
+    padding: 20px 0px;
+    color: #fff;
+    background-color: var(--thmColor);
+    transition: all .3s;
+}
+.thm__btn:hover {
+    background-color: #000;
+}
+
+.thm_btn.v2 {
+    background: var(--thmColor2);
+}
+
+.thm_btn.bordered {
+    border: 1px solid var(--thmColor);
+    border-radius: 40px;
+    color: var(--thmColor);
+    background: no-repeat;
+}
+.body_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: all .3s;
+}
+.body_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* default-css END 
+================================== */
+ 
+.container {}
+
+.header__area {
+  padding: 8px 0 6px;
+  z-index: 99;
+  margin-bottom: 40px;
+}
+
+.logo {
+    gap: 5px;
+
+    img {
+        width: 84px;
+    }
+
+    span {
+        line-height: 20px;
+        color: #232323;
+    }
+}
+
+.header__btn {
+    gap: 7px;
+    color: #232323;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--thmColor);
+    }
+}
+
+.menu-area{
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+        display: inline-block;
+        margin-left: 60px;
+        position: relative;
+      }
+}
+
+
+.bar a {
+    position: relative;
+  } 
+.bar a::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/bar.svg);
+    width: 24px;
+    height: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  } 
+
+/* Header section END */
+
+
+/*============ Login Area Start =============*/
+.login__area {
+    height: 100vh;
+    background: url('../img/login-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.login__content {
+    padding: 114px 48px;
+    border-radius: 20px;
+}
+
+.form__title {
+    margin-bottom: 48px;
+
+    h3 {
+        font-family: 'Lexend', sans-serif;
+        font-size: 24px;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+    }
+
+    span {
+        font-family: 'Lexend', sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+    }
+
+
+}
+
+.login_content a.thm_btn {
+    font-size: var(--f18);
+    font-weight: 600;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--thmColor2);
+    color: var(--white);
+    border-radius: 11px;
+}
+
+.input__blk {
+    margin-bottom: var(--f24);
+
+    input, select {
+    border: 1px solid var(--borderColor);
+    border-radius: 20px;
+    height: 56px;
+    padding: 0px 16px 0px 56px;
+    font-family: 'Lexend', sans-serif;
+    letter-spacing: -0.02em;
+    opacity: 1;
+    }
+
+    input::placeholder {
+        opacity: 1;
+        color: #D0D4CA;
+    }
+
+    .input__icon {
+        left: 16px;
+        top: 42px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .password-hide-icon {
+        left: auto;
+        right: 16px;
+        cursor: pointer;
+    }
+
+    label {
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.02em;
+        margin-bottom: 3px;
+        color: #333;
+    }
+
+    input.checkbox {
+        position: absolute;
+        opacity: 0 !important;
+        cursor: pointer;
+        height: 0 !important;
+        width: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+.checkmark {
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--thmColor);
+    border-radius: 3px;
+    top: 2px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 3px;
+        top: 0px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+
+.checkbox:checked ~ .checkmark {
+    background-color: var(--thmColor);
+}
+.checkbox:checked ~ .checkmark::after {
+    display: block;
+}
+
+.remember__blk .input__blk label {
+	color: var(--thmColor);
+	padding-left: 20px;
+    cursor: pointer;
+}
+.password__forget {
+	color: var(--thmColor);
+	font-size: 14px;
+	font-family: 'Lexend', sanse-serif;
+	transition: all .3s;
+	cursor: pointer;
+}
+.password__forget:hover {
+    color: #120019;
+}
+.login__btn {
+    margin-top: 48px;
+    font-weight: 600;
+    gap: 22px;
+}
+.no__account {
+    margin-top: 48px;
+
+    span {
+        font-size: 12px;
+        line-height: 15px;
+        color: #797979;
+    }
+
+    span a {
+        color: var(--thmColor) !important;
+        transition: all .3s;
+        cursor: pointer;
+    }
+
+    span a:hover {
+        text-decoration: underline !important;
+    }
+
+
+}
+/*============ Login Area End =============*/
+
+
+
+
+/*============  Area Start =============*/
+.Dashboard-area {
+	overflow: hidden;
+	padding-bottom: 90px;
+
+    .school_info_form .form__input input, .school_info_form .form__input select{
+        height: 40px !important;
+        border: 1px solid #E1E1E1 !important;
+        padding: 0px 15px;
+        border-radius: 4px;
+        color: #535353 !important
+    }
+
+}
+
+.main-menu {
+	border-radius: 22px;
+	background: var(--white);
+	padding-top: 40px;
+	padding-left: 35px;
+	padding-right: 21px;
+	padding-bottom: 40px;
+	height: 100%;
+	// min-height: 75vh;
+	// max-height: 100%;
+	transition: all .3s;
+	top: 0;
+
+    // @media (max-width: 767px){
+    // 	min-height: 90vh;
+    //     overflow: auto;
+
+    // }
+
+    // @media (min-width: 768px) and (max-width: 991px){
+    //     overflow: auto;
+    // 	min-height: 75vh;
+    // }
+
+    // @media (min-width: 992px) and (max-width: 1199px){
+    // 	min-height: 87vh;
+    // }
+
+    // @media (min-width: 1200px) and (max-width: 1399px){
+    // 	min-height: 75vh;
+    // }
+
+    // @media (min-width: 1400px){
+    // 	min-height: 60vh;
+    // }
+
+    ul li a {
+        padding: 10px 8px;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        border-radius: 5px;
+        border: 1px solid transparent;
+    }
+    
+    ul li a[aria-expanded="true"] {
+        background: var(--thmColor);
+        border: 1px solid #A6A6A6;
+    }
+    
+    
+    ul li a[aria-expanded="true"] span {
+        color: var(--white);
+    }
+    
+    ul li a span {
+        color: #232323;
+    }
+    
+    ul li a i {
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24px;
+    }
+    .menu-inner {
+        gap: 10px;
+        padding-left: 50px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .menu-inner a {
+        color: #3A3A3A;
+    }
+    ul li a .menu__icon2 {
+        display: none;
+    }
+    ul li a[aria-expanded="true"] .menu__icon2 {
+        display: block;
+    }
+    ul li a[aria-expanded="true"] .menu__icon1 {
+        display: none;
+    }
+}
+
+.closeX {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #989898;
+    cursor: pointer;
+}
+
+.header__right {
+    gap: 15px;
+}
+
+.sidebar__open {
+    background-color: var(--thmColor);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main-menu.active {
+    visibility: visible;
+    left: 0;
+}
+
+.main-menu.rep_nav {
+    padding-top: 15px;
+    padding-bottom: 35px;
+    height: auto;
+}
+
+.main-menu.rep_nav a {
+    line-height: 1.4;
+}
+
+
+.Scheduling-wrp {
+    border-radius: 21px;
+    padding-top: 50px;
+
+    @media (max-width: 767px){
+        padding-top: 40px;
+    }
+}
+.Scheduling-top {
+	padding-left: 38px;
+	padding-right: 13px;
+	margin-bottom: 32px;
+
+    @media (max-width: 767px){
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+.src_box_wrap {
+    gap: 10px;
+}
+.src_box {
+    border-radius: 20px;background: #F4F4F4;
+    width: 354px;
+    height: 56px;
+    padding: 0px 15px 0px 15px;
+}
+.src_box input {
+    width: 90%;
+    height: 100%;
+    background: no-repeat;
+    border: none;
+    text-transform: capitalize;
+}
+.src_box_btn {
+	height: 56px;
+	width: 140px;
+	border-radius: 20px;
+	background-color: #F25A05;
+	transition: all .3s;
+	gap: 13px;
+
+    &:hover {
+        background-color: var(--thmColor);
+    }
+}
+
+.edit-delete{
+    display: flex;
+    gap: .8rem;
+}
+
+
+.Scheduling-table {
+	border-top: 1px solid #D3D3D3;
+	margin-left: 20px;
+
+    @media (max-width:767px){
+        border: 1px solid #D3D3D3;
+	    margin: 20px;
+    }
+
+
+    .table::-webkit-scrollbar {
+        background: #DBDBDB;
+        width: 8px;
+        height: 8px;
+    }
+
+    .table::-webkit-scrollbar-thumb {
+        background: var(--thmColor);
+        border-radius: 10px;
+    }
+    
+    tr td:first-child {
+        padding-left: 45px;
+    }
+    tr th:first-child {
+        padding-left: 40px;
+    }
+    
+    td {
+        color: #3A3A3A;
+        font-size: 14px;
+        border-bottom: 1px solid #D3D3D3;
+        padding: 25px 0;
+    }
+    
+    table {
+        width: 100%;
+    }
+}
+
+.form_edit_btn {
+    cursor: pointer;
+}
+.page__bottom {
+	padding-top: 20px;
+	padding-left: 80px;
+
+    span {
+        font-size: 12px;
+        line-height: 15px;
+        color: #797979;
+    }
+}
+
+/* modal css start  */
+.modal {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.modal-content {
+	width: auto;
+	border-radius: 20px;
+	padding: 48px;
+	margin: auto;
+}
+.modal__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    color: #333333;
+    font-family: 'Lexend', sans-serif;
+}
+.modal__btn {
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+}
+.modal__btn button {
+    height: 62px;
+}
+.logout__modal .modal__btn button,
+.change_pass_form .modal__btn button {
+    width: 160px;
+}
+.modal__btn .no__btn {
+    background-color: #E6ECFF;
+    color: #333333;
+}
+.modal__btn .no__btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.add_user_modal .modal-dialog {
+	max-width: 720px;
+}
+.add_user_modal .modal__btn {
+    margin-top: 24px;
+}
+/* modal css end  */
+
+/* change pass form start */
+.change_pass_form_wrp {
+    padding: 58px 66px;
+}
+.change_pass_form {
+    max-width: 540px;
+}
+.change_pass_form .modal__btn {
+    margin-top: 126px;
+
+    @media (min-width:768px){
+        margin-top: 40px;    
+    }
+}
+/* change pass form end */
+
+
+/* customer page css start */
+.customer_info_modal{
+
+    .modal-dialog {
+        max-width: 612px;
+    }
+
+    .modal-content {
+        padding: 70px 46px 64px;
+    }
+
+    .modal__title {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 26px;
+    }
+}
+
+.customer__info__wrap {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 11px;
+}
+
+.customer__info__blk{
+
+    label {
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0px 0px 5px 5px;
+        color: #3A3A3A;
+    }
+
+    input, select{
+        height: 58px;
+        border: 1px solid #1976D2;
+        border-radius: 4px;
+        padding: 0px 18px;
+    }
+
+    .nice-select {
+        font-family: 'Quicksand', sans-serif;
+        border-radius: 4px;
+        height: 58px;
+        border: 1px solid #1976D2;
+    }
+
+    .nice-select .list {
+        border: 1px solid #1976D2;
+        border-radius: 4px;
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .nice-select::after {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 5px 0 5px;
+        border-color: #1976D2 transparent transparent transparent;
+        transform: rotate(0);
+    }
+
+    .nice-select.open::after {
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+
+}
+
+.customer_info_form_btn {
+    border-radius: 4px;
+    height: 72px;
+    margin-top: 148px;
+}
+
+.modal__close {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #989898;
+	top: 22px;
+	right: 20px;
+	cursor: pointer;
+	z-index: 9;
+}
+/* customer page css end */
+
+/* pagination css start */
+.pagination_blk {
+    margin-top: 15px;
+    justify-content: center;
+
+    @media (min-width: 768px){
+        justify-content: flex-end !important;
+        
+    }
+
+    ul li a {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #3A3A3A;
+        border-radius: 50%;
+        font-size: 12px;
+    }
+
+    ul li a.active {
+        background: var(--thmColor);
+        color: var(--white);
+        border-color: var(--thmColor);
+    }
+
+    .pagination_btn {
+        color: #C9C9C9;
+        font-size: 14px;
+        cursor: not-allowed;
+    }
+
+    .pagination_btn.active {
+        color: #000;
+        cursor: pointer;
+    }
+
+    ul {
+        display: flex;
+        gap: 8px;
+        margin-left: 11px;
+        margin-right: 30px;
+    }
+
+    ul::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #D9D9D9;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+    }
+}
+/* pagination css end */
+
+
+/* eployee page css start */
+.employee__modal{
+
+    .modal-content {
+        padding: 46px 46px 65px;
+    }
+
+    .modal-dialog {
+        max-width: 690px;
+    }
+
+    .modal__title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 60px;
+    }
+
+    .customer__info__blk label {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 10px;
+        color: #3A3A3A;
+    }
+
+    .customer__info__blk input, .customer__info__blk select {
+        height: 50px;
+        border: 1px solid #E1E1E1;
+        padding: 0px 12px;
+        font-size: 14px;
+        color: #3a3a3a;
+    }
+
+    .customer__info__blk {
+        margin-bottom: 20px;
+    }
+
+    .date__field input {
+        padding-left: 40px !important;
+    }
+
+    .empolyee_input_field img {
+        left: 10px;
+    }
+
+    .customer__info__blk .nice-select {
+        height: 50px;
+        border: 1px solid #E1E1E1;
+        font-size: 14px;
+    }
+
+    .customer__info__blk .nice-select .list {
+        border: 1px solid #E1E1E1;
+        border-top: 0;
+    }
+
+    .customer__info__blk input#password {
+        width: calc(100% - 12px);
+    }
+
+    .customer_info_form_btn {
+        height: 50px;
+        margin-top: 40px;
+    }
+}
+
+/* eployee page css end */
+
+.btn-icons{
+
+    @media (max-width:767px){
+        font-size: .8rem;
+        background-size: .8rem;
+    }
+
+}
+
+/* appoinment list page css start */
+.appointment-top {
+	grid-template-columns: 65% 35%;
+	gap: 0px;
+
+    // @media (max-width:767px){
+    //     grid-template-columns: 100%;
+    //     // grid-template-rows: repeat(2, 1fr);
+	//     gap: 25px;
+    // }
+}
+.appiontment-top-form {
+	grid-template-columns: 17% 17% 29% 29%;
+	gap: 12px;
+
+    // @media (max-width:767px){
+    //     grid-template-columns: 100%;
+    //     grid-template-rows: repeat(4, 1fr);
+	//     gap: 12px;
+    // }
+
+    
+}
+.appointment-top-btns {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 12px;
+
+    button {
+        height: 56px;
+        border-radius: 2px;
+        font-weight: 600;
+        gap: 15px;
+    }
+
+    button.search__btn {
+        background-color: var(--thmColor);
+    }
+    button.print__btn {
+        background-color: #E6ECFF;
+    }
+    button.add__btn {
+        background-color: #F2BE05;
+    }
+
+
+
+
+}
+.appiontment-top-form{
+
+    .form__input label {
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #3A3A3A;
+        margin-bottom: 5px;
+    }
+
+    .form__input .nice-select {
+        font-family: 'Quicksand', sans-serif;
+        border-radius: 2px;
+        height: 50px;
+        border: 1px solid #1976D2;
+        padding-left: 10px;
+        padding-right: 15px;
+    }
+    .form__input .nice-select::after {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 5px 0 5px;
+        border-color: #1976D2 transparent transparent transparent;
+        transform: rotate(0);
+        right: 5px;
+    }
+    .nice-select.open::after {
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+    .form__input .nice-select.open {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .form__input .nice-select .list {
+        border: 1px solid #1976D2;
+        border-radius: 2px;
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        z-index: 999;
+        width: calc(100% + 1px);
+    }
+    
+    .date__input label {
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.02em;
+    }
+    .date__input input {
+        height: 56px;
+        border: 1px solid #D0D4CA;
+        padding: 0px 14px;
+        border-radius: 2px;
+        font-family: 'Lexend', sans-serif;
+        letter-spacing: -0.02em;
+        font-size: 16px;
+    }
+}
+
+.bold-label{
+    font-weight: 600 !important;
+}
+
+.page__bottom_text {
+    filter: drop-shadow(0px 4px 4px #00000040);
+}
+/* appoinment list page css end */
+
+
+#class, #school{
+    height: 56px;
+    border-radius: 2px;
+    font-weight: 600;
+    gap: 15px;
+	padding: 0px 5px;
+}
+
+
+/* appointment page css start */
+.appointment {
+    padding: 34px 60px 100px 40px;
+
+.appointment__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
+    color: #3A3A3A;
+}
+.appointment__wrap {
+    grid-template-columns: 325px 1fr;
+    gap: 45px;
+}
+.appointment_confirm_wrap {
+    grid-template-columns: 190px 1fr;
+    gap: 30px;
+}
+.appointment__date__input {
+    z-index: 1;
+}
+.datepicker__icon {
+	margin-bottom: 20px;
+	z-index: -1;
+}
+.appointment__date__input input {
+	padding-left: 35px;
+    cursor: pointer;
+}
+.appointment__icon {
+    margin-bottom: 10px;
+}
+.appointment__time__select {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+
+    .time input {
+        appearance: none;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .time span {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        border: 1px solid #0058C1;
+        padding: 7px;
+        display: block;
+        border-radius: 2px;
+        color: #3A3A3A;
+        cursor: pointer;
+    }
+
+    .time input:checked ~ span {
+        background: #00000033;
+    }
+
+
+}
+}
+.confirmation__desc {
+    border: 1px solid #0058C1;
+    border-radius: 4px;
+    padding: 27px 0px 35px;
+}
+.confirmation__title {
+	font-size: 14px;
+	line-height: 18px;
+	gap: 10px;
+	color: #3A3A3A;
+	margin-bottom: 10px;
+}
+.confirmation__title span {
+    font-size: 24px;
+    color: #25B7AD;
+}
+.confirmation__time {
+    font-size: 14px;
+    line-height: 18px;
+}
+.confirmation__time p {
+    margin-bottom: 24px;
+}
+.appointment_area_btn {
+    gap: 50px;
+    padding-top: 70px;
+
+    button {
+        width: 180px;
+        height: 40px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .save__btn {
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .cancel__btn {
+        background-color: #E6ECFF;
+        color: #333;
+    }
+
+    .cancel__btn:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.school__info {
+    margin-top: 24px;
+    padding: 23px 90px 28px 30px;
+    border-radius: 21px;
+}
+.school__info__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 22px;
+    color: #3A3A3A;
+}
+.school_info_form{
+    padding-left: 15px;
+
+    .row {
+        --bs-gutter-x: 50px;
+        --bs-gutter-y: 8px;
+    }
+
+    .form__input label {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+
+    .form__input input {
+        height: 40px;
+        border: 1px solid #E1E1E1;
+        padding: 0px 15px;
+        border-radius: 4px;
+    }
+
+    .form__input__btn {
+        height: 40px;
+        background-color: var(--thmColor);
+        border-radius: 4px;
+        color: #fff;
+        font-size: 14px;
+        transition: all .3s;
+    }
+
+    .form__input__btn:hover {
+        background-color: #000;
+    }
+}
+
+/* date picker css */
+.Zebra_DatePicker {
+	background: #f4f4f4;
+	border: 0;
+	border-radius: 10px;
+	color: #000;
+	width: 100% !important;
+	top: calc(100% + 6px) !important;
+	box-shadow: 19px 19px 15px 0px #0000001A;
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	padding: 10px 25px;
+
+    .dp_actions .dp_caption {
+        font-weight: 600;
+        color: #828282;
+        font-family: "Lato", sans-serif;
+    }
+
+    .dp_daypicker th {
+        font-weight: 500;
+        font-size: 10px;
+        font-family: "Lato", sans-serif;
+        text-transform: uppercase;
+    }
+
+    .dp_body .dp_current, .dp_body .dp_selected {
+        color: #fff;
+        background-color: var(--thmColor);
+    }
+
+    td {
+        border-radius: 4px;
+        padding: 0;
+        cursor: pointer;
+        text-align: center;
+        min-width: 32px;
+        width: 32px !important;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    .dp_previous, .dp_next {
+        font-size: 0;
+        position: relative;
+    }
+
+    .dp_footer {
+        display: none !important;
+    }
+
+    .dp_header {
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+    .dp_previous::after,
+    .dp_next::after {
+        content: '\f105';
+        font-family: "Font Awesome 5 Pro";
+        font-size: 14px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .dp_previous::after {
+        content: '\f104';;
+    }
+}
+
+/* appointment page css end */
+
+
+/* appointment page 2 css start  */
+.appointment_page_2_wrap{
+
+    .appointment {
+        padding: 45px 50px 42px 50px;
+    }
+
+    .appointment__date__input {
+        gap: 7px;
+}
+
+    .Zebra_DatePicker {
+        top: calc(100% + 16px) !important;
+        width: 314px !important;
+}
+
+    .appointment__date__input input {
+        border: 1px solid var(--thmColor);
+        border-radius: 4px;
+        height: 30px;
+        padding-left: 15px;
+}
+
+    .form__input .nice-select::after {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 5px 0 5px;
+        border-color: #1976D2 transparent transparent transparent;
+        transform: rotate(0);
+}
+
+    .form__input .nice-select {
+        background-color: #EDEDED;
+        border-radius: 4px;
+        border: 1px solid #E1E1E1;
+        height: 40px;
+}
+
+    .nice-select .list {
+        border-radius: 0px 0px 4px 4px;
+        border: 1px solid #E1E1E1;
+        border-top: 0;
+        width: calc(100% + 1px);
+}
+
+    .school__info {
+        margin-bottom: 40px;
+        padding: 21px 118px 37px 56px;
+        border-radius: 21px;
+}
+
+    .appointment__icon {
+        margin-bottom: 18px;
+        gap: 8px;
+}
+
+    p {
+        color: #3A3A3A;
+}
+
+    .appointment__wrap {
+        gap: 100px;
+        grid-template-columns: 500px 1fr;
+}
+
+    .appointment_confirm_wrap {
+        gap: 110px;
+}
+
+    .appointment__time__select .time span {
+        border-radius: 20px;
+}
+
+    .appointment__time__select {
+        gap: 7px 14px;
+        padding-top: 15px;
+}
+
+    .confirmation__desc {
+        border-radius: 20px;
+        padding: 23px 20px 56px 16px;
+}
+
+    .appointment_area_btn {
+        gap: 45px;
+        padding-top: 53px;
+}
+
+    .appointment_area_btn button {
+        width: 185px;
+        height: 50px;
+        border-radius: 20px;
+}
+
+    .confirmation__time {
+        padding-left: 36px;
+    }
+
+    button.Zebra_DatePicker_Icon {
+        background: url('../img/date-picker-icon.svg');
+        background-repeat: no-repeat;
+        top: 11px !important;
+    }
+}
+
+
+.appointment__date__status {
+	gap: 35px;
+	padding-top: 20px;
+
+    span {
+        font-size: 14px;
+        color: #3A3A3A;
+    }
+
+    span::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: var(--thmColor);
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    span.booked::after {
+        background-color: #D0D4CA;
+    }
+
+    span.available::after {
+        background-color: #25B7AD;
+    }
+
+    span.myselect::after  {
+        background-color: orange;
+    }
+}
+
+/* appointment page 2 css end  */
+
+
+
+/* account setup modal start */
+.account__setup{
+
+    .modal-dialog{
+        max-width: 500px;
+    }
+
+    .modal-content {
+        border-radius: 4px;
+        padding: 62px 52px 62px 48px;
+    }
+
+    .form__title {
+        margin-bottom: 24px;
+    }
+
+    .login__btn {
+        margin-top: 24px;
+    }
+
+    .nice-select {
+        margin-bottom: 24px;
+    }
+}
+
+.account__setup.reset__pass .modal-content {
+	padding: 123px 52px 123px 48px;
+}
+/* account setup modal end */
+
+.table{
+    overflow: auto;
+    // height: 873px;
+    height: 55vh;
+    // max-height: 100%;
+    margin-bottom: 0;
+
+    @media (max-width: 767px){
+        height: 70vh;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px){
+        height: 60vh !important;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px){
+        height: 45vh;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399px){
+        height: 48vh;
+    }
+
+    @media (min-width: 1400px){
+        height: 52vh;
+    }
+
+    thead th {
+        position: sticky;
+        top: 0;
+        background: #fff;
+        z-index: 99;
+        padding: 25px 0 16px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #232323;
+        border-bottom: 1px solid #D3D3D3;
+    }
+}
+
+#table-header-fixed {
+    position: fixed;
+    top: 0px;
+    display: none;
+    background-color: white;
+}
+/*============Customers Area End =============*/
+
+
+/* ::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c2c9d2;
+    background: var(--thmColor);
+  } */
+
+
+  /* event calendar start */
+  #wrap {
+    width: 1100px;
+    margin: 0 auto;
+    }
+    
+#external-events {
+    float: left;
+    width: 150px;
+    padding: 0 10px;
+    text-align: left;
+    }
+    
+#external-events h4 {
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 1em;
+    }
+    
+.external-event { /* try to mimick the look of a real event */
+    margin: 10px 0;
+    padding: 2px 4px;
+    background: #3366CC;
+    color: #fff;
+    font-size: .85em;
+    cursor: pointer;
+    }
+    
+#external-events p {
+    margin: 1.5em 0;
+    font-size: 11px;
+    color: #666;
+    }
+    
+#external-events p input {
+    margin: 0;
+    vertical-align: middle;
+    }
+
+#calendar {
+/* 		float: right; */
+    margin: 0;
+    width: 500px !important;
+    background-color: #FFFFFF;
+      border-radius: 6px;
+    box-shadow: 0 1px 2px #C3C3C3;
+    -webkit-box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.18);
+-moz-box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.18);
+box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.18);
+    }
+
+
+
+    .fc-header-title h2 {
+        margin-top: 0;
+        white-space: nowrap;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0;
+        font-family: 'Lato', sans-serif;
+    }
+    td.fc-day {
+        background: #F7F7F7;
+    }
+    .fc-widget-content {
+        border: 1px solid #E1E1E1;
+    }
+    .fc-first th {
+        font-family: 'Lato', sans-serif;
+        background: #E3E7F0 !important;
+        color: #3A3A3A !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        line-height: 20px !important;
+    }
+    .fc-week .fc-day > div .fc-day-number {
+        font-size: 12px;
+    }
+    .fc-header-right {
+        display: none;
+    }
+    .fc-week .fc-day:hover .fc-day-number {
+        background-color: var(--thmColor);
+    }
+    span.fc-button {
+        font-family: 'Lato', sans-serif;
+        border-color: var(--thmColor);
+        color: var(--thmColor);
+    }
+    .fc-text-arrow {
+        font-size: 24px;
+    }
+    .fc-button-today {
+        background-color: var(--thmColor);
+        color: #fff !important;
+        text-transform: capitalize;
+    }
+    .fc-header-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+    }
+    .fc-event-inner {
+        font-family: 'Lato', sans-serif;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        padding: 5px !important;
+        border-radius: 5px;
+        text-align: center;
+        background-color: orange !important;
+    }
+    .fc-event.booked  .fc-event-inner{
+        background-color: #D0D4CA !important;
+        color: #3A3A3A !important;
+    }
+    .fc-event.available  .fc-event-inner{
+        background-color: #25B7AD !important;
+        color: #FFF !important;
+    }
+    .fc-event.selected  .fc-event-inner{
+        background-color: var(--thmColor) !important;
+        color: #FFF !important;
+    }
+  /* event calendar end */
+
+
+  /* appointment modal css start */
+.appointment__modal{
+
+    .modal-dialog {
+        max-width: 1300px;
+        width: 100%;
+    }
+
+    .modal-content {
+        border-radius: 25px;
+        padding: 100px 20px 30px;
+        border: 0;
+        margin: 0px 20px;
+    }
+
+    .modal-body {
+        background-color: #EDEDED;
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
+  /* appointment modal css end */
+
+
+@media (min-width: 1400px){
+  .appointment_page_2_wrap .appointment_confirm_wrap {
+    gap: 30px;
+  }
+}
+
+.user-bottom{
+    @media (max-width:767px){
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .appointment-top-btns {
+        display: grid;
+        grid-template-columns: 31% 31% 31% !important;
+        grid-template-rows: 1fr !important;
+    }
+}
+
+/* Big screen :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .appointment-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .appointment__wrap {
+        grid-template-columns: 280px 1fr;
+        gap: 30px;
+    }
+    .appointment_page_2_wrap .appointment__wrap {
+        gap: 60px;
+    }
+    .appointment_page_2_wrap .appointment_confirm_wrap {
+        gap: 50px;
+        grid-template-columns: 130px 1fr;
+    }
+    .appointment {
+        padding: 34px 30px 70px 30px;
+    }
+
+    .Scheduling-wrp .appointment-alone .appointment-wrap {
+        grid-template-columns: 200px 1fr;
+        gap: 0px;
+    }
+
+    .Zebra_DatePicker {
+        padding: 10px 10px;
+    }
+    .appointment_confirm_wrap {
+        grid-template-columns: 140px 1fr;
+        gap: 20px;
+    }
+    .appointment_page_2_wrap .confirmation__desc {
+        padding: 20px 10px 56px 10px;
+    }
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Dashboard-area .container {
+        max-width: 100%;
+    }
+
+    .main-menu {
+        padding-left: 16px;
+        padding-right: 20px;
+    }
+    
+    .main-menu ul li a {
+        gap: 10px;
+        padding: 12px 10px;
+    }
+    
+    .main-menu ul li a span {
+        font-size: 16px;
+    }
+    
+    .Dashboard-area .col-lg-3 {
+        width: 28%;
+    }
+    
+    .Dashboard-area .col-lg-9 {
+        width: 72%;
+    }
+    .Scheduling-top ul, .topNav ul {
+        gap: 15px;
+    }
+    
+    .time_btn button {
+        padding: 0 16px;
+    }
+    
+    .time_btn {
+        padding: 0 10px;
+    }
+    .Dashboard-area {
+        min-height: 600px;
+    }
+
+    .src_box {
+        width: 310px;
+        padding: 0px 10px 0px 10px;
+    }
+    .src_box_btn {
+        width: 140px;
+    }
+
+    .customer_page_wrapper .Scheduling-top {
+        padding-left: 20px;
+    }
+    .customer_page_wrapper .src_box_btn {
+        width: 130px;
+    }
+    .customer_page_wrapper .src_box {
+        width: 260px;
+    }
+    .customer_page_wrapper .Scheduling-top h4 {
+        font-size: 20px;
+    }
+    .Scheduling-table tr th:first-child {
+        padding-left: 20px;
+    }
+    .customer_page_wrapper .table thead th {
+        padding: 20px 0 16px;
+        font-size: 13px;
+    }
+    .customer_page_wrapper .Scheduling-table tr td:first-child {
+        padding-left: 25px;
+    }
+    .customer_page_wrapper .Scheduling-table td {
+        font-size: 13px;
+    }
+
+    .appointment-top-btns{
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        grid-template-rows: 1fr;
+        // gap: 12px;
+    }
+
+    .appointment-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .appointment__wrap {
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+    }
+    .appointment {
+        padding: 34px 30px 70px 30px;
+    }
+    .Zebra_DatePicker {
+        padding: 10px 10px;
+    }
+    .appointment_confirm_wrap {
+        grid-template-columns: 125px 1fr;
+        gap: 15px;
+    }
+    .appointment__time__select {
+        gap: 8px;
+    }
+    .school__info {
+        padding: 23px 30px 28px 30px;
+    }
+    .school_info_form .row {
+        --bs-gutter-x: 25px;
+    }
+
+    .Scheduling-wrp .appointment-alone .appointment-wrap {
+        grid-template-columns: 150px 1fr;
+        gap: 0px;
+    }
+
+    .appointment_page_2_wrap .appointment__wrap {
+        gap: 60px;
+        grid-template-columns: 1fr;
+    }
+    .appointment_page_2_wrap .appointment_confirm_wrap {
+        gap: 50px;
+        grid-template-columns: 240px 1fr;
+    }
+    .appointment_page_2_wrap .Dashboard-area .container {
+        max-width: 960px;
+    }
+    .appointment__date__status {
+        gap: 30px;
+    }
+
+    .appointment_page_2_wrap .confirmation__desc {
+        padding: 20px 10px 56px 10px;
+        height: 85%;
+    }
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .Dashboard-area {
+        min-height: 600px;
+    }
+    .main-menu {
+        position: fixed;
+        top: 0;
+        border-radius: 0;
+        padding-top: 100px;
+        z-index: 9999;
+        visibility: hidden;
+        left: -500px;
+        width: 300px;
+        transition: all .3s;
+    }
+
+    .main-menu.rep_nav {
+        height: 100vh;
+        padding-top: 80px;
+    }
+        
+    .src_box {
+        max-width: 250px;
+        padding: 0px 10px 0px 10px;
+    }
+    .Scheduling-top ul, .topNav ul {
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+    .logo span {
+        line-height: 18px;
+        font-size: 14px;
+    } 
+    .customer_page_wrapper .Scheduling-top {
+        padding-left: 20px;
+    }
+    .customer_page_wrapper .src_box_btn {
+        width: 130px;
+    }
+    .customer_page_wrapper .src_box {
+        width: 260px;
+    }
+    .customer_page_wrapper .Scheduling-top h4 {
+        font-size: 20px;
+    }
+    .Scheduling-table tr th:first-child {
+        padding-left: 20px;
+    }
+    .customer_page_wrapper .table thead th {
+        padding: 20px 0 16px;
+        font-size: 13px;
+    }
+    .customer_page_wrapper .Scheduling-table tr td:first-child {
+        padding-left: 25px;
+    }
+    .customer_page_wrapper .Scheduling-table td {
+        font-size: 13px;
+    }
+    .appointment-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .appointment__wrap {
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+    }
+    .appointment {
+        padding: 34px 30px 70px 30px;
+    }
+
+    .appointment-top-btns{
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        grid-template-rows: 1fr;
+        // gap: 12px;
+    }
+
+    .Zebra_DatePicker {
+        padding: 10px 10px;
+    }
+    .appointment_confirm_wrap {
+        grid-template-columns: 125px 1fr;
+        gap: 15px;
+    }
+    .appointment__time__select {
+        gap: 8px;
+    }
+    .school__info {
+        padding: 23px 30px 28px 30px;
+    }
+    .school_info_form .row {
+        --bs-gutter-x: 25px;
+    }
+
+    .appointment_page_2_wrap .appointment_confirm_wrap {
+        gap: 50px;
+        grid-template-columns: 150px 1fr;
+    }
+
+    .appointment_page_2_wrap .appointment__wrap {
+        gap: 60px;
+        grid-template-columns: 1fr;
+    }
+
+    .Scheduling-wrp .appointment-alone .appointment-wrap {
+        grid-template-columns: 150px 1fr !important;
+        gap: 0px !important;
+    }
+    .appointment_page_2_wrap .appointment_confirm_wrap {
+        gap: 50px;
+        grid-template-columns: 240px 1fr;
+    }
+    .appointment_page_2_wrap .Dashboard-area .container {
+        max-width: 960px;
+    }
+    .appointment__date__status {
+        gap: 10px 30px;
+        flex-wrap: wrap;
+    }
+    .appointment_page_2_wrap .appointment_area_btn {
+        gap: 25px;
+    }
+    .appointment_page_2_wrap .appointment_area_btn button {
+        width: 140px;
+    }
+    .appointment_page_2_wrap .Zebra_DatePicker {
+        width: 250px !important;
+    }
+    .appointment_page_2_wrap .school__info {
+        padding: 21px 40px 37px 30px;
+    }
+    .appointment_page_2_wrap .school_info_form .row {
+        --bs-gutter-x: 15px;
+    }
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .container{
+    max-width: 100%;
+}
+    .main-menu {
+        position: fixed;
+        top: 0;
+        border-radius: 0;
+        padding-top: 100px;
+        z-index: 999;
+        visibility: hidden;
+        left: -500px;
+        width: 100%;
+        height: 100vh !important;
+        z-index: 99999;
+    }
+
+.main-menu.rep_nav {
+    padding-top: 80px;
+}
+    .header-area {
+        padding: 15px 0px;
+        max-width: calc(100% - 24px);
+        margin: 25px auto 35px;
+        border-radius: 10px;
+    }
+    .logo img {
+        width: 70px;
+    }
+    .logo span {
+        line-height: 18px;
+        font-size: 14px;
+    } 
+    .login_content {
+        width: 330px;
+    }
+    .Scheduling-top {
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 20px;
+        align-items: baseline;
+    }
+    
+    .Scheduling-top ul, .topNav ul {
+        width: 100%;
+    }
+    
+    .Scheduling-wrp h4 {
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .table table {
+        min-width: 880px;
+    }
+    .Scheduling-table .table.table::-webkit-scrollbar{
+        display: none;
+    }
+    .date_time_list ul li {
+        gap: 20px;
+    }
+    .dt_scroll{
+    overflow: auto;
+}
+
+.dt_scroll .date_color {
+    min-width: 880px;
+}
+
+.dt_scroll .date_time_list {
+    min-width: 850px;
+}
+.Scheduling-wrp {
+    margin-right: 0px;
+    // border-top-right-radius: 0;
+    // border-bottom-right-radius: 0;
+}
+
+.Scheduling-wrp.System_wrp.v1 {
+    border-radius: 21px;
+    margin: unset;
+}
+
+.Scheduling-wrp.System_wrp .table table {
+    min-width: 440px;
+}
+
+.System_wrp .row {
+    padding-right: 30px;
+}
+
+.customer-chinese-footer{
+    justify-content: center !important;
+
+}
+
+.pagination_blk button {
+    font-size: 18px;
+}
+.pagination_blk ul{
+    gap: 15px;
+}
+.Schedul_popup {
+    padding: 30px 0;
+    padding-top: 50px;
+}
+
+.src_box {
+	max-width: 100%;
+	width: 100%;
+}
+
+
+.change_pass_form_wrp {
+	padding: 40px 20px;
+}
+.change_pass_form .modal__btn {
+	margin-top: 50px;
+}
+
+.employee__modal .modal-content {
+	padding: 30px 20px 40px;
+}
+.employee__modal .modal__title {
+	margin-bottom: 40px;
+}
+
+.appointment-top {
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @media (max-width:767px){
+        grid-template-columns: 100%;
+        // grid-template-rows: repeat(2, 1fr);
+	    gap: 25px;
+    }
+}
+.appiontment-top-form {
+	grid-template-columns: 1fr 1fr;
+
+    @media (max-width:767px){
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 1fr);
+	    gap: 12px;
+    }
+}
+
+.appointment__wrap {
+	grid-template-columns: 1fr;
+	gap: 40px;
+}
+
+.Scheduling-wrp .appointment-alone .appointment-wrap {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+}
+
+.appointment {
+    padding: 34px 30px 70px 30px;
+}
+.Zebra_DatePicker {
+	padding: 10px 10px;
+	width: 260px !important;
+}
+.appointment_confirm_wrap {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.Scheduling-wrp .appointment-alone .appointment_confirm_wrap {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+}
+.appointment__time__select {
+    gap: 8px;
+}
+.school__info {
+    padding: 23px 30px 28px 30px;
+}
+.school_info_form .row {
+    --bs-gutter-x: 25px;
+}
+.appointment_area_btn button {
+	width: 120px;
+}
+.appointment_area_btn {
+	gap: 25px;
+	padding-top: 50px;
+}
+.appointment_page_wrap .Scheduling-wrp ,
+.appointment_page_2_wrap .Scheduling-wrp {
+    border-radius: 21px !important;
+}
+
+.appointment_page_2_wrap .appointment_confirm_wrap {
+    gap: 50px;
+    grid-template-columns: 150px 1fr;
+}
+.appointment_page_2_wrap .appointment__wrap {
+	gap: 40px;
+	grid-template-columns: 1fr;
+}
+.appointment_page_2_wrap .Dashboard-area .container {
+    max-width: 960px;
+}
+.appointment__date__status {
+    gap: 10px 30px;
+    flex-wrap: wrap;
+}
+.appointment_page_2_wrap .appointment_area_btn {
+    gap: 25px;
+}
+.appointment_page_2_wrap .appointment_area_btn button {
+    width: 140px;
+}
+.appointment_page_2_wrap .Zebra_DatePicker {
+    width: 250px !important;
+}
+.appointment_page_2_wrap .school__info {
+    padding: 21px 40px 37px 30px;
+}
+.appointment_page_2_wrap .school_info_form .row {
+    --bs-gutter-x: 15px;
+}
+.appointment_page_2_wrap .appointment_confirm_wrap {
+	gap: 40px;
+	grid-template-columns: 1fr;
+}
+.appointment_page_2_wrap .appointment__date {
+	min-height: 120px;
+}
+.appointment_page_2_wrap .appointment {
+	padding: 40px 30px 40px 30px;
+}
+
+
+
+.modal-content {
+	padding: 40px 20px;
+}
+
+.logout__modal .modal__btn button, .change_pass_form .modal__btn button {
+	width: 130px;
+	height: 50px;
+	padding: 0;
+}
+.modal__btn button {
+	height: 50px;
+	padding: 0;
+}
+.customer__info__wrap {
+	grid-template-columns: 1fr;
+}
+.customer_info_modal .modal-content {
+	padding: 40px 20px;
+}
+.customer_info_modal .modal__title {
+	font-size: 20px;
+	line-height: 28px;
+}
+.customer_info_form_btn {
+	height: 50px;
+	margin-top: 40px;
+	padding: 0;
+}
+
+
+.login__content {
+	padding: 60px 20px;
+}
+.form__title h3 {
+	font-size: 20px;
+}
+.form__title {
+	margin-bottom: 30px;
+}
+.thm__btn {
+	padding: 15px 0px;
+}
+.no__account {
+	margin-top: 30px;
+}
+.account__setup.reset__pass .modal-content {
+	padding: 80px 30px 80px 30px;
+}
+.account__setup .modal-content {
+	padding: 60px 20px 60px 20px;
+}
+
+.page__bottom {
+	padding-top: 20px;
+	padding-left: 0;
+	flex-direction: column;
+	justify-content: center !important;    
+}
+
+.change-pass-bottom{
+    text-align: center;
+}
+
+.calender__container {
+    /* width: 700px; */
+	/* overflow: scroll; */
+}
+    #calendar {
+        width: 100% !important;
+        /* overflow: scroll; */
+    }
+
+    .appointment__modal .modal-body {
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+    .appointment__modal .appointment_page_2_wrap .appointment {
+        padding: 0;
+    }
+    
+    .appointment__modal .modal-content {
+        padding: 60px 20px 30px;
+        margin-left: 3px;
+    }
+    .appointment__modal .appointment_page_2_wrap .school__info {
+        padding: 0;
+    }
+    .appointment__modal .school_info_form {
+        padding-left: 0;
+    }
+}
+
+
+
+
+
